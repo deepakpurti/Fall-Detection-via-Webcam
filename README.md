@@ -1,5 +1,5 @@
-# Fall-Detection
-Human Fall Detection via Webcam
+## Introduction
+Human Fall Detection via Webcam (and E-mail Alert)
 
 ## Requirements
 1. MATLAB - R2019b or higher
