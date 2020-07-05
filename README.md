@@ -1,14 +1,15 @@
 # Fall-Detection
-Human Fall Detection from a Video Clip of a CCTV camera feed
+Human Fall Detection via Webcam
 
 ## Requirements
 1. MATLAB - R2019b or higher
 2. MATLAB Toolboxes:
-   <br>a. Image Processing Toolbox
-   <br>b. Computer Vision Toolbox
+   <br>a. Image Acquisition Toolbox
+   <br>b. Image Processing Toolbox
+   <br>c. Computer Vision Toolbox
 
 ## Execution
-Run 'falldetection_via_videoclip.m' .
+Run 'falldetection_via_webcam.m' .
 This would read 'video.mp4' and detect the falling action of a human in that video.
 An e-mail alert would be send to user after fall detection.
 
