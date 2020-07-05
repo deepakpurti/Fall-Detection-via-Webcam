@@ -1,20 +1,5 @@
 function [] = sample()
 
-% finding path where all files in the program are stored
-%[path,name,ext] = fileparts(mfilename('C:\Users\Lenovo\Desktop\Fall-Detection-master\videos'));
-
-% reading the video
-%camera=ipcam('http://192.168.43.1:8080/video');
-%webcamlist
-%while true
-    %picture=camera.snapshot;
-   % image(picture);
-    %drawnow;
-%end
-
-%vid = webcam;
-%vid = vision.VideoFileReader('video.mp4');
-
 % initializing foreground and blob detectors
 detector = vision.ForegroundDetector(...
     'NumTrainingFrames',10,'NumGaussians',5,...
@@ -59,7 +44,7 @@ posFalls = struct([]);
 prevOr = [];
 
 frameNo = 0;
-vidobj = imaq.VideoDevice('winvideo', 1);
+vidobj = imaq.VideoDevice('winvideo', 1);  %reading from webcam
 %while ~isDone(camera)
 while true
     pause(0.1);
