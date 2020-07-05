@@ -1,9 +1,9 @@
-function sendemail()
+function sendemail() % for Gmail only
 
-mail = 'Sender@gmail.com'; % sender's gmail address
-sender = 'Home Surveillance <Sender@gmail.com>'; 
-receiver = 'Receiver@gmail.com'; %receiver's gmail address
-password = '********';  % my gmail password 
+mail = 'sender@gmail.com'; % sender's gmail address
+sender = 'Sender <sender@gmail.com>'; % "Sender" = sender's name
+receiver = 'receiver@gmail.com'; %receiver's gmail address
+password = '********';  % sender's gmail password 
 host = 'smtp.gmail.com';
 % preferences
 setpref('Internet','SMTP_Server', host);
@@ -15,7 +15,7 @@ props.setProperty('mail.smtp.auth','true');
 props.setProperty('mail.smtp.socketFactory.class', 'javax.net.ssl.SSLSocketFactory');
 props.setProperty('mail.smtp.socketFactory.port','465');
 % Send the email
-sendmail(receiver,'ALERT','Fall Detected!')
+sendmail(receiver,'ALERT','Fall Detected!') % sendemail('receiver's email address','subject of email','message in email')
 
 end
 
