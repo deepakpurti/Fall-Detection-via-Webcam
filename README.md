@@ -10,7 +10,7 @@ Human Fall Detection via Webcam (and E-mail Alert)
 
 ## Execution
 Run 'falldetection_via_webcam.m' .
-This would read 'video.mp4' and detect the falling action of a human in that video.
+This would read from the webcam as long as the program runs, and detect the falling action of a human in the feed.
 An e-mail alert would be send to user after fall detection.
 
 ## Modification
